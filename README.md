@@ -1,1 +1,3 @@
-# train
+This application stores backend information in Firebase. It grabs text from the field and stores it as a train name with other information like "Destination", "Frequency", "Next Arrival" and "Minutes Away." When the user hits "submit," their text will be added in a new row. Also, this is live information that will update on the users screen when they refresh their browser. Current information like "Next Arrival" and "Minutes Away" updates.  When a new refresh happens, the information entered by the user is pulled back from Firebase and displayed on the screen. This is like ping-pong with text information. Calculations are made using the moment.js function which uses current time to determine when the new train will come and how many minutes away the train is.
+
+This applicatin shows my use of JQuery, Javascript, and the backend use of Firebase.

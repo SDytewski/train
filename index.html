@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>UK Tube</title>
+    <!---JQuery-->
+    <script src="https://code.jquery.com/jquery.js"></script>
+
+    <!--Moment.JS-->
+    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+
+
+    <!-- Bootstrap File -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+    <!---CSS-->
+
+    <link href="https://fonts.googleapis.com/css?family=Merriweather|Muli:300" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+
+
+    <!-- Firebase Reference -->
+    <script src="https://www.gstatic.com/firebasejs/5.8.5/firebase.js"></script>
+   
+  
+
+
+</head>
+
+<div class="container mt-4 mb-4">
+
+    <body>
+        <div id="box">
+            <div class="jumbotron jumbotron-fluid">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 text-center">
+
+                            <h1 class="display-4">WELCOME TO THE UK TUBE</h1>
+                            
+
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Icon_train_UK.svg/225px-Icon_train_UK.svg.png"
+                                class="mx-auto d-block" alt="Cinque Terre">
+                            <p class="lead p-5">
+                                Hello young chap! Give us a train that you would like to add and we will figure out the
+                                rest!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <table class="table table-dark" id='customer-table'>
+            <thead>
+                <tr>
+                    <th scope="col">Train Name</th>
+                    <th scope="col">Destination</th>
+                    <th scope="col">Frequency</th>
+                    <th scope="col">Next arrival</th>
+                    <th scope="col">Minutes Away</th>
+                </tr>
+            </thead>
+            <tbody>
+               
+                </tr>
+            </tbody>
+        </table>
+
+
+
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-header">
+                        <h5>Add Train</h5>
+                    </div>
+                    <form>
+
+
+                        <div class="form-group">
+                            <label for="trainName-text">Train Name</label>
+                            <input type="train" class="form-control" id="trainName-text" placeholder="Your Train">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="destination-text">Destination
+                            </label>
+                            <input type="train" class="form-control" id="destination-text" aria-describedby="trainhelp"
+                                placeholder="Your Destination">
+
+                        </div>
+
+
+                        <div class="form-group">
+                            <label for="firstTrain-text">First Train Time(HH:mm - military time)</label>
+                            <input type="train" class="form-control" id="firstTrain-text" aria-describedby="trainhelp"
+                                placeholder="Train Time">
+
+                        </div>
+
+
+                        <div class="form-group">
+                            <label for="frequency-text">Frequency (min)</label>
+                            <input type="train" class="form-control" id="frequency-text" aria-describedby="trainhelp"
+                                placeholder="In Minutes">
+
+                        </div>
+
+
+
+
+                        <button type="submit" class="btn btn-danger" id="submit">Submit</button>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+</div>
+
+
+<script src="assets/javascript/script.js"></script>
+</body>
+
+</html>
