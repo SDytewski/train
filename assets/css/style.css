@@ -5,13 +5,14 @@
    
 }
 
-.card-header { background-color:rgb(175, 175, 255);
+.card-header { 
+    background-color:rgb(175, 175, 255);
     
 
 }
 
 body{
     Font-Family: 'Muli', Sans-Serif;
-Font-Size: 15px;
-font-weight: 600;
+    Font-Size: 15px;
+    font-weight: 600;
 }
